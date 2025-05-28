@@ -30,7 +30,7 @@
   content: "REC";
   position: absolute;
   top: var(--padding-for-decoration);
-  right: 29px;
+  right: calc(var(--padding-for-decoration) + 29px);
   font-weight: normal;
   font-size: 18px;
   line-height: 25px;
@@ -40,7 +40,7 @@
   content: "";
   position: absolute;
   top: calc(var(--padding-for-decoration) + 8px);
-  right: 9px;
+  right: calc(var(--padding-for-decoration) + 9px);
   display: block;
   border-radius: 50%;
   box-shadow: 0 0 4px 2px var(--decoration-color);

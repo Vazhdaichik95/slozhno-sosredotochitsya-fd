@@ -3,7 +3,6 @@
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-image: var(--header-image);
-  padding-inline: 10px;
   background-position: bottom center;
   background-size: cover;
   background-attachment: fixed;
@@ -13,7 +12,7 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  padding-block: 10px;
+  padding: 10px;
   inline-size: 100%;
   block-size: 100vh;
 }
@@ -22,7 +21,7 @@
   content: "";
   position: absolute;
   top: var(--padding-for-decoration);
-  right: 0;
+  right: var(--padding-for-decoration);
   border-inline-end: 1px solid var(--decoration-color);
   border-block-start: 1px solid var(--decoration-color);
   inline-size: 25px;
@@ -33,7 +32,7 @@
   content: "";
   position: absolute;
   bottom: var(--padding-for-decoration);
-  left: 0;
+  left: var(--padding-for-decoration);
   border-inline-start: 1px solid var(--decoration-color);
   border-block-end: 1px solid var(--decoration-color);
   inline-size: 25px;
@@ -120,6 +119,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+  padding-inline: 10px;
 }
 
 .section-title {
@@ -170,6 +170,10 @@ h4.title-decor {
   font-weight: normal;
 }
 
+.gallery-section {
+  padding-inline: 10px;
+}
+
 .gallery-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -200,15 +204,11 @@ h4.title-decor {
 
 @media (width >= 768px) {
   :root {
-    --padding-for-decoration: 20px;
-  }
-
-  .page {
-    padding-inline: 20px;
+    --padding-for-decoration: 20px
   }
 
   .header {
-    padding-block: 20px;
+    padding: 20px;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -233,6 +233,7 @@ h4.title-decor {
   }
 
   .section {
+    padding-inline: 20px;
     grid-template-columns: 1fr 2fr;
   }
 
@@ -250,6 +251,10 @@ h4.title-decor {
 
   .how-section .section-title {
     grid-row: span 2;
+  }
+
+  .gallery-section {
+    padding-inline: 20px;
   }
 
   .gallery-list {
