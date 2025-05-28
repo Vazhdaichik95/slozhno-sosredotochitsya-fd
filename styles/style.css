@@ -204,7 +204,7 @@ h4.title-decor {
 
 @media (width >= 768px) {
   :root {
-    --padding-for-decoration: 20px
+    --padding-for-decoration: 20px;
   }
 
   .header {
