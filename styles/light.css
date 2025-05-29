@@ -24,6 +24,14 @@
   background-color: var(--background-color);
 }
 
+.theme-light .page .rec-decoration::before {
+  display: none
+}
+
+.theme-light .page .rec-decoration::after {
+  display: none
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --header-image: url('../images/cover-image-light.png');
@@ -34,5 +42,13 @@
     --headers-text-color: #353430;
     --headers-text-color-addition: #353430;
     --main-text-color: #353430;
+  }
+
+  .page .rec-decoration::before {
+    display: none
+  }
+
+  .page .rec-decoration::after {
+    display: none
   }
 }

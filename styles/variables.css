@@ -15,3 +15,9 @@
   --main-text-color: #F1B2CE;
   --title-bright-color: var(--background-color);
 }
+
+@media (width >= 768px) {
+  :root {
+    --padding-for-decoration: 20px;
+  }
+}
