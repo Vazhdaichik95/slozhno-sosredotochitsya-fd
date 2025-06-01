@@ -45,10 +45,10 @@
   }
 
   .page .rec-decoration::before {
-    display: none
+    display: none;
   }
 
   .page .rec-decoration::after {
-    display: none
+    display: none;
   }
 }
